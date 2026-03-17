@@ -122,9 +122,9 @@ Future Improvements
 
 Screenshots
 
-![its Dashboard](its_dashboard.jpg)
-![itslist Page](its_list.png)
-![tecrf its](its_tecrf.png)
+![its Dashboard](user_dashboard.png)
+![itslist Page](user_myrequest.png)
+![tecrf its](user_tecrfform.png)
 
 
 Author
