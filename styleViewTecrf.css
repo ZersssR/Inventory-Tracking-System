@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
+}
+h3 {
+    font-size: 24px; /* Adjusted size */
+    font-weight: bold; /* Make it stand out */
+    color: #2a5298; /* Match the left border color */
+    margin-bottom: 15px; /* Add spacing below the heading */
+    text-align: center; /* Center-align the heading */
+    border-bottom: 2px solid #e0eafc; /* Subtle underline effect */
+    padding-bottom: 10px; /* Space for underline separation */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.form-section, .list-section, .remarks-section {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    flex: 1;
+}
+.form-section h2, .list-section h2, .remarks-section h2 {
+    font-size: 1.4em;
+    color: #444;
+}
+.form-section label, .form-section p {
+    display: block;
+    margin: 8px 0;
+    color: #555;
+}
+.form-section input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+}
+th {
+    background-color: #f0f0f0;
+}
+.btn {
+    background-color: #5a5a5a;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+.btn:hover {
+    background-color: #444;
+}
+.btn-approve {
+    background-color: #4a8451;
+}
+.btn-approve:hover {
+    background-color: #3b6c41;
+}
+.btn-reject {
+    background-color: #9e4946;
+}
+.btn-reject:hover {
+    background-color: #803833;
+}
+.back-btn {
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: 18px;
+    background-color: black; /* Bootstrap Primary Color */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Spacing below the button */
+}
+.back-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+.back-btn:focus {
+    outline: none;
+}
+.assign-button-container {
+text-align: right; /* Align content inside to the right */
+}
+
+.assign-button {
+    background-color: #587b90;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-top: 20px;
+    border: none; /* Add border styling if needed */
+}
+
+
+.assign-button:hover {
+    background-color: #466276;
+}
+.remarks-section textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+.tecrf-details-container {
+    background-color: #ffffff; /* White background for a clean look */
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 12px; /* Softer corners for a modern look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow for better elevation */
+    margin-bottom: 20px; /* Maintain spacing below */
+    border-left: 5px solid #2a5298; /* Add a left border for a unique touch */
+    margin-top: 30px;
+}
+
+.tecrf-details-container h2 {
+    font-size: 24px; /* Adjusted size */
+    font-weight: bold; /* Make it stand out */
+    color: #2a5298; /* Match the left border color */
+    margin-bottom: 15px; /* Add spacing below the heading */
+    text-align: center; /* Center-align the heading */
+    border-bottom: 2px solid #e0eafc; /* Subtle underline effect */
+    padding-bottom: 10px; /* Space for underline separation */
+}
+
+.tecrf-details-container p {
+    font-size: 16px; /* Adjust font size for readability */
+    color: #555; /* Use a darker gray for text contrast */
+    line-height: 1.6; /* Improve readability with line spacing */
+    margin: 8px 0; /* Add spacing between paragraphs */
+}
+
+.tecrf-details-container p strong {
+    font-weight: bold; /* Emphasize labels */
+    color: #2a5298; /* Match theme color */
+}
+input[type="checkbox"] {
+        transform: scale(2.0); /* Adjust scale for desired size */
+        margin-right: -20px; /* Optional: spacing */
+        margin: auto;
+        display: block; /* Ensures proper centering in the table cell */
+}

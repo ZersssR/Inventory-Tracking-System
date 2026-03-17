@@ -1,0 +1,321 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 12px;
+}
+.container h2,
+.container p {
+    color: black;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    font-size: 12px; /* Change "Hi" and "Welcome" text to black */
+}
+    /* Static Sidebar Styles */
+#sidebar {
+height: 100%;
+width: 250px;
+position: fixed;
+top: 0;
+left: 0;
+background-color: #1d3557; /* Formal dark blue */
+color: white;
+padding-top: 20px;
+box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+z-index: 1;
+border-radius: 15px;  /* Rounded corners */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 20px;
+border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+border-radius: 15px;  /* Rounded corners */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+#sidebar-header h2 {
+margin: 0;
+font-size: 12px;
+font-weight: bold;
+color: #a8dadc;
+}
+
+#sidebar ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+#sidebar ul li {
+padding: 15px 20px;
+border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+transition: background-color 0.3s ease;
+}
+
+#sidebar ul li:hover {
+background-color: #457b9d;
+}
+
+#sidebar ul li a {
+color: #f1faee;
+text-decoration: none;
+display: flex;
+align-items: center;
+font-size: 12px;
+font-weight: 500;
+transition: color 0.3s ease;
+}
+
+#sidebar ul li a:hover {
+color: #a8dadc;
+}
+
+#sidebar ul li i {
+font-size: 12px;
+margin-right: 10px;
+color: #a8dadc;
+transition: color 0.3s ease;
+}
+
+#sidebar ul li:hover i {
+color: white;
+}
+
+/* Adjust the main content margin to accommodate the static sidebar */
+#main-content {
+margin-left: 250px; /* Align the main content next to the sidebar */
+padding: 20px;
+transition: margin-left 0.3s ease;
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-content img {
+    height: 50px;
+}
+
+.header-content h1 {
+    font-size: 12px;
+    margin: 0;
+}
+
+.text-content {
+    margin-left: 15px;
+}
+
+.text-content h4 {
+    margin: 0;
+    font-size: 12px;
+}
+
+.text-content p {
+    margin: 0;
+    font-size: 12px;
+    color: #555;
+}
+
+.clock-container {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+.analog-clock {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    position: relative;
+    background-color: #fff;
+}
+
+.analog-clock .hour-hand,
+.analog-clock .minute-hand,
+.analog-clock .second-hand {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #333;
+    top: 50%;
+    left: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+}
+
+.analog-clock .hour-hand {
+    height: 4px;
+    width: 30%;
+    background-color: #000;
+}
+
+.analog-clock .minute-hand {
+    width: 40%;
+    background-color: #666;
+}
+
+.analog-clock .second-hand {
+    width: 45%;
+    background-color: red;
+}
+
+.analog-clock .center-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#modal {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.8);
+justify-content: center;
+align-items: center;
+}
+#modal-content {
+margin: auto;
+padding: 20px;
+width: 90%; /* Relative width for responsiveness */
+max-width: 500px; /* Maximum width to prevent overflow */
+background-color: white;
+border-radius: 10px;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+#modal-content h2 {
+margin-bottom: 20px;
+}
+#modal-content ul {
+list-style-type: none;
+padding: 0;
+}
+#modal-content ul li {
+margin-bottom: 10px;
+}
+#modal-content ul li a {
+text-decoration: none;
+color: #333;
+font-size: 12px;
+padding: 10px 20px;
+background-color: lightblue;
+border-radius: 5px;
+display: inline-block;
+transition: background-color 0.3s ease;
+}
+#modal-content ul li a:hover {
+background-color: deepskyblue;
+}
+#modal button {
+position: absolute;
+top: 10px;
+right: 10px;
+background: none;
+border: none;
+font-size: 12px;
+cursor: pointer;
+}
+/* Container for the filters */
+/* Container for the filters */
+.filters {
+max-width: 1000px;
+margin: 0 auto;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 8px;
+background-color: #f9f9f9;
+display: grid;
+grid-template-columns: repeat(2, 1fr); /* Create two columns of equal width */
+gap: 20px;
+}
+
+/* Adjust the heading to span across both columns */
+.filters h3 {
+font-family: Arial, sans-serif;
+text-align: center;
+grid-column: span 2; /* Makes the header span across both columns */
+margin-bottom: 20px;
+}
+
+/* Each filter container takes one grid item */
+.filters div {
+display: flex;
+flex-direction: column;
+}
+
+/* Style for labels */
+.filters label {
+font-size: 12px;
+margin-bottom: 8px;
+color: #333;
+}
+
+/* Style for the select dropdown */
+.filters select {
+width: 100%;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 12x;
+background-color: #fff;
+}
+
+/* Style for the submit button */
+.filters button {
+grid-column: span 2; /* Button spans both columns */
+padding: 10px 20px;
+background-color: #1d3557;
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 12px;
+cursor: pointer;
+text-align: center;
+margin-top: 20px;
+}
+
+.filters button:hover {
+background-color: #457b9d;
+}
+
+.container {
+padding: 20px;
+font-family: Arial, sans-serif;
+background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+
+h3 {
+color: #333;
+margin-bottom: 15px;
+}

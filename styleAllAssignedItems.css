@@ -1,0 +1,126 @@
+/* Reset and Body Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+/* Container Styling */
+.container {
+    max-width: 900px;
+    width: 100%;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+.container:hover {
+    transform: scale(1.01);
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 28px;
+    color: #2a5298;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #2a5298;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    color: #333;
+}
+table th, table td {
+    border: 2px solid #1f1f1f;
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid #e4e7ed;
+}
+th {
+    background: #345d9d;
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+tr:nth-child(even) {
+    background-color: #f8f9fc;
+}
+tr:hover {
+    background-color: #dbe7f2;
+    cursor: pointer;
+}
+
+/* Button Styling */
+.view-link, .back-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #2a5298;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.back-btn {
+    background-color: #333;
+    margin-bottom: 20px;
+    font-size: 18px;
+    padding: 10px 24px;
+    display: inline-block;
+    text-align: center;
+}
+.view-link:hover, .back-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+.back-btn:focus, .view-link:focus {
+    outline: none;
+}
+
+/* No Data Message Styling */
+.no-data {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    padding: 20px;
+    background-color: #f8f9fc;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+    table th, table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .view-link, .back-btn {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}

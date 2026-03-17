@@ -1,0 +1,171 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
+    padding: 20px;
+    position: relative; /* For absolute positioning of back button */
+    font-size: 0.9em; /* Smaller font size */
+}
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #345d9d;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #345d9d;
+    padding-bottom: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+table {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    background: #fff;
+}
+
+th, td {
+    border: 1px solid #1f1f1f;
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+}
+
+th {
+    background-color: #345d9d;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-weight: 500;
+}
+td {
+    background-color: #f9f9f9;
+}
+tr:nth-child(even) td {
+    background-color: #deeafa
+}
+tr:hover td {
+    background-color:#8fa3bf; /* Highlight color on hover */
+}
+a {
+    color: #000000; /* Black color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000; /* Black color on hover */
+    text-decoration: underline;
+}
+
+.actions {
+    margin-top: 40px;
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.action-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.print-btn {
+    background-color: #1c3b66;
+}
+.print-btn:hover {
+    background-color: #2980b9;
+}
+.excel-btn {
+    background-color: #1c3b66;
+}
+.excel-btn:hover {
+    background-color: #2980b9;
+}
+.back-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #000; /* Bootstrap Primary Color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Spacing below the button */
+}
+.back-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+.back-btn:focus {
+    outline: none;
+}
+.back-btn {
+    margin-bottom: 20px;
+    text-align: left;
+}
+@media print {
+    body {
+    font-size: 0.6em; /* Smaller font size for printing */
+    line-height: 1.2; /* Optional: To reduce line spacing a bit */
+    }
+
+    h1, h2 {
+        font-size: 18px; /* Smaller heading font size for printing */
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 8px; /* Reduce padding */
+        font-size: 12px; /* Smaller font size for table text */
+    }
+
+    .back-btn, .actions {
+        display: none; /* Hide the back button in print */
+    }
+    .print-logo {
+        display: block; /* Show only in print view */
+        margin-bottom: 20px; /* Space between the logo and the table */
+    }
+
+    .print-logo img {
+        width: 120px; /* Adjust size as needed */
+        height: auto;
+    }
+    /* Optional: Adjust page breaks for better printing */
+    .container {
+        page-break-after: always;
+    }
+}

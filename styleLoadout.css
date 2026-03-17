@@ -1,0 +1,162 @@
+/* Reset and Body Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+    padding: 80px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+h1 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2a5298; /* This creates the line below the heading */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: center; /* Center align the text */
+    padding: 15px;
+
+
+}
+th, td {
+     text-align: center; /* Ensure center alignment */
+     vertical-align: middle; /* Center vertically as well */
+     font-size: 12px;
+
+}
+th {
+    background: #345d9d;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+tr:nth-child(even) {
+    background-color: #f8f9fc;
+}
+tr:hover {
+    background-color: #bfcfdb;
+    cursor: pointer;
+}
+.issue-out-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #4078a3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.issue-out-btn:hover {
+    background-color: #218838;
+}
+.issue-out-btn:focus {
+    outline: none;
+}
+
+modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the op and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; 
+    border-radius: 8px;
+    text-align: center;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    table, th, td {
+        font-size: 14px;
+    }
+    .issue-out-btn {
+        font-size: 16px;
+    }
+}
+.back-btn {
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: 18px;
+    background-color: black; /* Bootstrap Primary Color */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Spacing below the button */
+}
+.back-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+.back-btn:focus {
+    outline: none;
+}
+label {
+    font-weight: 500;
+    margin-top: 20px;
+    display: block;
+}
+input[type="date"] {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+input[type="checkbox"] {
+    transform: scale(1.0); /* Adjust the scale value to make it bigger */
+    width: 20px;  /* Optional: explicitly set width */
+    height: 20px; /* Optional: explicitly set height */
+}
